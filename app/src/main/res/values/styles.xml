@@ -23,7 +23,7 @@
         <!-- Primary dark theme color of the app (sets color of status bar) -->
         <item name="colorPrimaryDark">#40a368</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#5ca904</item>
+        <item name="colorButtonNormal">#ffffff</item>
     </style>
 
 </resources>

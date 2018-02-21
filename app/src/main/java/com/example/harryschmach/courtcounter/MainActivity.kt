@@ -59,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         displayRedsTeamB(redsTeamB)
     }
 
-
     /**
      * Resets the score and red cards for both teams back to 0.
      */

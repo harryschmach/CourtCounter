@@ -21,6 +21,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--android:src="@drawable/soccerfieldtransparant2"-->
+        <!--android:scaleType="centerCrop"/>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/lightedfield"
+        android:scaleType="centerCrop"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,52 +50,73 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="16dp"
-                android:text="Team A"
-                android:textColor="#a03623"
-                android:textSize="14sp" />
+                android:padding="@dimen/team_name_padding"
+                android:text="Italy"
+                android:textColor="#0165fc"
+                android:textSize="@dimen/team_text_size" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Score"
-                android:textColor="#616161"
-                android:textSize="12sp" />
+                android:orientation="horizontal"
+                android:padding="@dimen/top_pad_numeric"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/top_pad_numeric"
+                        android:text="Score"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sub_data_text_size" />
 
-            <TextView
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/top_pad_numeric"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/value_text_size" />
+                </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Red Cards"
-                android:textColor="#616161"
-                android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/top_pad_numeric"
+                        android:text="Red Cards"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sub_data_text_size" />
 
-            <TextView
-                android:id="@+id/team_a_reds"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                    <TextView
+                        android:id="@+id/team_a_reds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/top_pad_numeric"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/value_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -114,7 +148,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -123,52 +157,76 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="16dp"
-                android:text="Team B"
-                android:textColor="#fac205"
-                android:textSize="14sp" />
+                android:padding="@dimen/team_name_padding"
+                android:text="France"
+                android:textColor="#e50000"
+                android:textSize="@dimen/team_text_size" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Score"
-                android:textColor="#616161"
-                android:textSize="12sp" />
+                android:orientation="horizontal"
+                android:padding="@dimen/top_pad_numeric">
 
-            <TextView
-                android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Red Cards"
-                android:textColor="#616161"
-                android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/top_pad_numeric"
+                        android:text="Score"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sub_data_text_size" />
 
-            <TextView
-                android:id="@+id/team_b_reds"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/top_pad_numeric"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/value_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:padding="@dimen/top_pad_numeric"
+                        android:text="Red Cards"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sub_data_text_size" />
+
+                    <TextView
+                        android:id="@+id/team_b_reds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/top_pad_numeric"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/value_text_size" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -198,9 +256,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="@dimen/top_pad_numeric"
         android:onClick="resetScore"
-        android:text="Reset" />
+        android:text="Reset"
+        android:textSize="@dimen/team_text_size"/>
 
 </RelativeLayout>
