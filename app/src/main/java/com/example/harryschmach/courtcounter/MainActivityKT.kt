@@ -9,9 +9,9 @@ import android.view.View
 import android.widget.TextView
 
 /**
- * This activity keeps track of the basketball score for 2 teams.
+ * This activity keeps track of the soccer score for 2 teams.
  */
-class MainActivity : AppCompatActivity() {
+class MainActivityKT : AppCompatActivity() {
 
     // Tracks the score for Team A
     internal var scoreTeamA = 0
