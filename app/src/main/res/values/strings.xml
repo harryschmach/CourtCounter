@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Soccer Scores</string>
     <string name="goal_string">Gooooooal!!</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="zero_score_zero_reds">0</string>
+    <string name="score_str">Score</string>
+    <string name="team_a">Italy</string>
+    <string name="team_b">France</string>
+    <string name="reset_str">Reset</string>
 </resources>
